@@ -15,6 +15,7 @@ This Kentico Module was inspired by the answer given in this StackOverflow quest
 
 https://stackoverflow.com/questions/66820668/how-do-i-allow-continuousintegration-exe-to-use-a-connection-string-in-azure-key
 
+Currently the NuGet package is based on Kentico Xperience 13.
 
 ## Installation
 
