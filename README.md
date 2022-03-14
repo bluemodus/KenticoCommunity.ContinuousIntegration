@@ -58,7 +58,7 @@ Optimizing file repository...
 ```
 
 ## License
-This project uses a standard MIT license which can be found here.
+This project uses a standard MIT license which can be found [here]([here](https://github.com/bluemodus/KenticoCommunity.ContinuousIntegration/blob/main/LICENSE)
 
 ## Contribution
 Contributions are welcome. Feel free to submit pull requests to the repo.
