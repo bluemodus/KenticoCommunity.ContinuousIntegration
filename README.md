@@ -39,10 +39,10 @@ Restoring objects...
 Optimizing file repository...
 ```
 
-Using a PowerShell window, Set the `CMSConnectionString` environment variable.
+Using a PowerShell window, Set the `SQLAZURECONNSTR_CMSConnectionString` environment variable.
 
 ```PowerShell
-$Env:CMSConnectionString="Data Source=.;Initial Catalog=k13-demo;Integrated Security=False;Persist Security Info=False;User ID=boilerplate13;Password=DSKJHFDJKHDFFDDFDFKFD;Connect Timeout=60;Encrypt=False;Current Language=English;"
+$Env:SQLAZURECONNSTR_CMSConnectionString="Data Source=.;Initial Catalog=k13-demo;Integrated Security=False;Persist Security Info=False;User ID=boilerplate13;Password=DSKJHFDJKHDFFDDFDFKFD;Connect Timeout=60;Encrypt=False;Current Language=English;"
 ```
 
 Now when you Type `ContinuousIntegration.exe`, you will the see the connection string being used comes from the `CMSConnectionString` environment variable.
@@ -51,7 +51,7 @@ Continuous Integration Console
 Kentico Software
 
 Overriding CMSConnectionString using environment variables
-CMSConnectionString=Data Source=.;Initial Catalog=k13-demo;Integrated Security=False;Persist Security Info=False;User ID=boilerplate13;Password=******;Connect Timeout=60;Encrypt=False;Current Language=English
+SQLAZURECONNSTR_CMSConnectionString=Data Source=.;Initial Catalog=k13-demo;Integrated Security=False;Persist Security Info=False;User ID=boilerplate13;Password=******;Connect Timeout=60;Encrypt=False;Current Language=English
 
 Restoring objects...
 Optimizing file repository...

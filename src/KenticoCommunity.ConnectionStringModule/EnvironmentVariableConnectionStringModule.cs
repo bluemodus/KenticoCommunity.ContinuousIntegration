@@ -25,14 +25,14 @@ namespace KenticoCommunity.ConnectionStringModule
             {
                 return;
             }
-
-            var azureConnectionString = Environment.GetEnvironmentVariable("CMSConnectionString");
+           
+            var azureConnectionString = Environment.GetEnvironmentVariable("SQLAZURECONNSTR_CMSConnectionString");
             
             Console.WriteLine();
 
             if (string.IsNullOrWhiteSpace(azureConnectionString))
             {
-                Console.WriteLine($"CMSConnectionString environment variable is not set. Nothing to do.{Environment.NewLine}");
+                Console.WriteLine($"SQLAZURECONNSTR_CMSConnectionString environment variable is not set. Nothing to do.{Environment.NewLine}");
 
                 return;
             }
@@ -40,8 +40,7 @@ namespace KenticoCommunity.ConnectionStringModule
             var connectionStringBuilder = new SqlConnectionStringBuilder(azureConnectionString);
             connectionStringBuilder.Password = "******";
             var displayConnectionString = connectionStringBuilder.ToString();
-            Console.WriteLine($"Overriding CMSConnectionString using environment variables{Environment.NewLine}CMSConnectionString={displayConnectionString}{Environment.NewLine}");
-
+            Console.WriteLine($"Overriding CMSConnectionString using environment variables{Environment.NewLine}SQLAZURECONNSTR_CMSConnectionString={displayConnectionString}{Environment.NewLine}");
 
             SettingsHelper.ConnectionStrings.SetConnectionString("CMSConnectionString", azureConnectionString);
         }
