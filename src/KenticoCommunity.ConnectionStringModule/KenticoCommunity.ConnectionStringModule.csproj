@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
-    <Version>0.0.1</Version>
+    <Version>0.0.3</Version>
     <Description>The purpose of this module is ensure `ContinuousIntegration.exe` can run successfully if the connection string is set in environment variables as quite often the case when the site is hosted in an Azure AppService.
 
 Based on code published here:
@@ -10,7 +10,9 @@ https://stackoverflow.com/questions/66820668/how-do-i-allow-continuousintegratio
     <Copyright>BlueModus 2022</Copyright>
     <RepositoryType>GitHub</RepositoryType>
     <RepositoryUrl>https://github.com/bluemodus/KenticoCommunity.ContinuousIntegration</RepositoryUrl>
-    <PackageReleaseNotes>0.0.1
+    <PackageReleaseNotes>0.0.3
+Added support for separated OM database.
+0.0.1
 The purpose of this module is ensure `ContinuousIntegration.exe` can run successfully if the connection string is set in environment variables as quite often the case when the site is hosted in an Azure AppService.</PackageReleaseNotes>
     <PackageTags>Kentico KenticoCommunity Xperience Module</PackageTags>
     <PackageLicenseExpression></PackageLicenseExpression>
